@@ -1,12 +1,14 @@
 <div id='header'>
-		<%= image_tag("mwd_service_logo2.png", alt: "Midwest Diesel Service") %>
-		<%= image_tag("Logo Header.jpg", alt: "Dealership") %> 
+	<div id='top-logos'></div>
+		<%= image_tag("mwd_service_logo2.png", alt: "Midwest Diesel Service", :id => 'logo') %>
+		<%= image_tag("Logo Header.jpg", alt: "Dealership", :id => 'shingle') %> 
 		<div id='address'>
 			<p style='float: right'>8284 West 35W Service Drive NE<br>Minneapolis, MN 55449<br>(763) 780-8533</p>
 		</div>
+	</div>
 				
 		<nav style='color:white'>
-			<div class="table">
+			<div class="nav-bar">
 				<ul id="horizontal-list" style="list-style:none">
 					<li class=nav><%= link_to "Home", root_path %></li> 
 					<li class=nav><%= link_to "Parts", parts_path %></li> 
